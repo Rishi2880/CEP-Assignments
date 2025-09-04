@@ -1,0 +1,33 @@
+//PROBLEM STATEMENT
+//CREATE AN JAVA PROGRAM USING INHERITANCE (EXTENDS KEYWORD) 
+//CODE
+class animal {
+    void display(){
+    System.out.println("animal sounds ");
+    }
+}
+
+class dog extends animal{
+    void display(){
+        System.out.println("dog barks");
+    }
+}
+
+class cat extends animal{
+    void display(){
+        System.out.println("cat meows");
+    }
+}
+public class animals {
+    public static void main (String[] args) {
+        animal a ;
+        a=new dog();
+        a.display();
+
+        a=new cat();
+        a.display();
+        
+
+
+    }
+}
