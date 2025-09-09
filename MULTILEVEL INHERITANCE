@@ -1,0 +1,38 @@
+// PROBLEM STATEMENT 
+CREATE AN JAVA PROGRAM USING MULTILEVEL INHERITANCE 
+
+class calculator {
+    void on(){
+        System.out.println("Your calculator is started");
+    }
+}
+
+class add extends calculator{
+    void add(){
+        int a = 5;
+        int b = 2;
+        int result= a + b ;
+
+    System.out.println("Addition is" + result );
+    }
+}
+
+
+class sub extends add {
+    void sub(){
+        int a = 5;
+        int b = 2;
+        int result= a - b ;
+
+    System.out.println("subtraction is" + result );
+
+    }
+}
+public class inheritance{
+    public static void main(String[]args){
+        sub s =new sub();
+        s.on();
+        s.add();
+        s.sub();
+    }
+}
